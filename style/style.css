@@ -1,0 +1,165 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(243, 180, 64);
+}
+section {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px 20px;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  background-color: rgb(243, 180, 64);
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* drawing area */
+
+.drawingArea {
+  margin-top: 20px;
+  height: calc(100% - 30px);
+}
+.emoji {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: rgb(243, 180, 64);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eyess,
+.eyess2 {
+  height: 20px;
+  width: 10px;
+  background-color: black;
+  border-radius: 40px;
+  position: absolute;
+  top: 40px;
+}
+.eyess {
+  left: 100px;
+}
+.eyess2 {
+  left: 40px;
+}
+.cross,
+.cross2 {
+  height: 30px;
+  width: 7px;
+  background-color: black;
+  position: absolute;
+  top: 40px;
+  transform: rotate(45deg);
+}
+.cross {
+  left: 40px;
+}
+.cross2 {
+  left: 100px;
+}
+.cross::before,
+.cross2::before {
+  content: "";
+  height: 30px;
+  width: 7px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  transform: rotate(90deg);
+}
+
+.eyeBrowss,
+.eyeBrowss2 {
+  width: 15px;
+  height: 7.5px;
+  background-color: transparent;
+  border-radius: 100px 100px 0 0;
+  border: 5px solid;
+  border-bottom: none;
+  position: absolute;
+  top: 25px;
+}
+.eyeBrowss {
+  left: 93px;
+}
+.eyeBrowss2 {
+  left: 33px;
+}
+.rev {
+  width: 15px;
+  height: 7.5px;
+  background-color: transparent;
+  border-radius: 100px 100px 0 0;
+  border: 5px solid;
+  border-bottom: none;
+  position: absolute;
+  top: 25px;
+  left: 93px;
+}
+.rev2 {
+  width: 15px;
+  height: 7.5px;
+  background-color: transparent;
+  border-radius: 0px 0px 100px 100px;
+  border: 5px solid;
+  border-top: none;
+  position: absolute;
+  top: 25px;
+  left: 33px;
+}
+
+.mouths {
+  width: 60px;
+  height: 30px;
+  border: 8px solid;
+  position: absolute;
+  border-radius: 0 0 100px 100px;
+  border-top: none;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mouths2 {
+  width: 50px;
+  height: 25px;
+  border: 8px solid;
+  position: absolute;
+  border-radius: 100px 100px 0 0;
+  border-bottom: none;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mouths3 {
+  height: 50px;
+  width: 20px;
+  border-radius: 100px;
+  background-color: black;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
